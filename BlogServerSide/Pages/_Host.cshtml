@@ -1,0 +1,9 @@
+﻿@page "/"
+@namespace BlogServerSide.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = "_Layout";
+}
+<!--This is a razor page, and for most Blazor apps, this should be the only .cshtml page. 
+The rest should be .razor components-->
+<component type="typeof(App)" render-mode="ServerPrerendered" />
